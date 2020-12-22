@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Search Page Design</title>
+  <meta charset="UTF-8">	
+	<link rel="stylesheet" type="text/css" href="search-css.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body ng-controller="ctrl">
+
+<div class="content">
+<form class="search-form">
+	<div class="search-form-items">
+		<div class="search-icon">
+         <img src="search.svg" alt="">
+		</div>
+   <input  id="add" type="text" placeholder="Search for everything"  ng-model="addName" ng-change="addTemp()">
+    <input type="submit" class="btn btn-primary" ng-click="addRow()" ng-show="addName"  style="display: none; opacity: 0; width: 0px; height: 0px;" />
+
+ 	</div>
+</form>	
+<div class="recent-search">
+<div class="trend-search">
+	<h3>Trending shortcuts</h3>
+ 
+ <ul>
+ <li><a href="#"> <img src="message.svg"> Messages   </a></li>	
+ <li><a href="#"> <img src="attachments.svg"> Attachments </a></li>	
+ <li><a href="#"> <img src="users.svg"> People </a></li>	
+ </ul>	
+</div>
+<div class="history-search">
+	<h3>Recent searches</h3>
+ 
+ <ul>
+ <li ng-repeat="row in rows | filter : search"  ng-class="{'muted':isTemp($index)}">
+ <a href="#"> <img src="history.svg"> {{row}} <span  ng-click="deleteRow(row)" ng-hide="isTemp($index)"><img src="close.svg"></span> </a></li>	
+  </ul>	
+</div>	
+</div>
+
+</div>
+ 
+  
+ <script>
+   function ctrl($scope){
+  $scope.rows = ['exports','reservation','app ill'];
+  $scope.temp = false;
+  
+  $scope.addRow = function(){
+    $scope.temp = false;
+    $scope.addName="";
+  };
+  
+  $scope.deleteRow = function(row){
+    $scope.rows.splice($scope.rows.indexOf(row),1);
+  };
+  
+  $scope.plural = function (tab){
+    return tab.length > 1 ? 's': ''; 
+  };
+  
+  $scope.addTemp = function(){
+    if($scope.temp) $scope.rows.pop(); 
+    else if($scope.addName) $scope.temp = true;
+    
+    if($scope.addName) $scope.rows.push($scope.addName);
+    else $scope.temp = false;
+  };
+  
+  $scope.isTemp = function(i){
+    return i==$scope.rows.length-1 && $scope.temp;
+  };
+  
+}
+ </script> 
+</body>
+</html>

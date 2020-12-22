@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group" transform="translate(0.625 0.625)">
+    <path d="M0 0L20 0L20 20L0 20L0 0Z" id="Path" fill="none" fill-rule="evenodd" stroke="none" />
+    <path d="M3.33333 6.66667C5.17428 6.66667 6.66667 5.17428 6.66667 3.33333C6.66667 1.49238 5.17428 0 3.33333 0C1.49238 0 0 1.49238 0 3.33333C0 5.17428 1.49238 6.66667 3.33333 6.66667Z" transform="translate(4.1666665 2.5)" id="Oval" fill="none" fill-rule="evenodd" stroke="#202842" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 5L0 3.33333C-3.70074e-16 1.49238 1.49238 0 3.33333 0L6.66667 0C8.50762 0 10 1.49238 10 3.33333L10 5" transform="translate(2.5 12.5)" id="Path" fill="none" fill-rule="evenodd" stroke="#202842" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0C1.47493 0.377641 2.50654 1.70666 2.50654 3.22917C2.50654 4.75167 1.47493 6.08069 0 6.45833" transform="translate(13.333333 2.6083333)" id="Path" fill="none" fill-rule="evenodd" stroke="#202842" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M2.5 4.875L2.5 3.20833C2.4913 1.69548 1.46485 0.378196 0 0" transform="translate(15 12.625)" id="Path" fill="none" fill-rule="evenodd" stroke="#202842" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
