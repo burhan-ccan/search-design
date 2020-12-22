@@ -3,7 +3,7 @@
 <head>
 	<title>Search Page Design</title>
   <meta charset="UTF-8">	
-	<link rel="stylesheet" type="text/css" href="search-css.css">
+	<link rel="stylesheet" type="text/css" href="css/search-css.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,7 +14,7 @@
 <form class="search-form">
 	<div class="search-form-items">
 		<div class="search-icon">
-         <img src="search.svg" alt="">
+         <img src="img/search.svg" alt="">
 		</div>
    <input  id="add" type="text" placeholder="Search for everything"  ng-model="addName" ng-change="addTemp()">
     <input type="submit" class="btn btn-primary" ng-click="addRow()" ng-show="addName"  style="display: none; opacity: 0; width: 0px; height: 0px;" />
@@ -26,9 +26,9 @@
 	<h3>Trending shortcuts</h3>
  
  <ul>
- <li><a href="#"> <img src="message.svg"> Messages   </a></li>	
- <li><a href="#"> <img src="attachments.svg"> Attachments </a></li>	
- <li><a href="#"> <img src="users.svg"> People </a></li>	
+ <li><a href="#"> <img src="img/message.svg"> Messages   </a></li>	
+ <li><a href="#"> <img src="img/attachments.svg"> Attachments </a></li>	
+ <li><a href="#"> <img src="img/users.svg"> People </a></li>	
  </ul>	
 </div>
 <div class="history-search">
@@ -36,7 +36,7 @@
  
  <ul>
  <li ng-repeat="row in rows | filter : search"  ng-class="{'muted':isTemp($index)}">
- <a href="#"> <img src="history.svg"> {{row}} <span  ng-click="deleteRow(row)" ng-hide="isTemp($index)"><img src="close.svg"></span> </a></li>	
+ <a href="#"> <img src="img/history.svg"> {{row}} <span  ng-click="deleteRow(row)" ng-hide="isTemp($index)"><img src="img/close.svg"></span> </a></li>	
   </ul>	
 </div>	
 </div>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<svg width="22px" height="22px" viewbox="0 0 22 22" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"   xmlns="http://www.w3.org/2000/svg">
   <g id="Group" transform="translate(0.625 0.625)">
     <path d="M0 0L20 0L20 20L0 20L0 0Z" id="Path" fill="none" fill-rule="evenodd" stroke="none" />
     <path d="M9.46997 3.53553L4.0533 8.9522C3.36294 9.64256 3.36294 10.7618 4.0533 11.4522C4.74366 12.1426 5.86295 12.1426 6.5533 11.4522L11.97 6.03553C13.3507 4.65482 13.3507 2.41625 11.97 1.03553C10.5893 -0.345178 8.35068 -0.345178 6.96997 1.03553L1.5533 6.4522C-0.517767 8.52327 -0.517767 11.8811 1.5533 13.9522C3.62437 16.0233 6.98223 16.0233 9.0533 13.9522L14.47 8.53553" transform="translate(3.0300293 2.2978516)" id="Path" fill="none" fill-rule="evenodd" stroke="#0F0F2B" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
